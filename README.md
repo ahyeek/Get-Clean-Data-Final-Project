@@ -34,5 +34,17 @@ Getting and Cleaning Data Final Project
 2. Extract the Std index using Grep function. Param ignore case, regex +mean+ and fixed=FALSE.
 3. Using Mean and Std index on master dataset.
 
+### Assignment 3 : Uses descriptive activity names to name the activities in the data set
+1. Merge Master table with Activity labels loaded from activity_labels.txt
 
+### Assignment 4 : Appropriately labels the data set with descriptive variable names
+1. Replace column names using gsub function.
+2. Replace with the following rule: ^t-time; ^f-frequency; Acc-Accelerator; Gyro-Gyroscope; Mag-Magnitude
+
+### Assignment 5 : From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
+1. Make a copy of master dataset from orignal merged dataset.
+2. Rearrange TidyData columns.
+3. Order according to participants, then activities.
+2. Using lapply for calculating average of each variables for each activities and each subject.
+3. Write TidayData to an output file.
 
